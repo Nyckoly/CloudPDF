@@ -23,17 +23,22 @@ if($_SERVER['REQUEST_METHOD']=='POST'){//VERIFICA SE O METODO ENVIADO É POST
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
    
     <form method="post">
-        Nome: <input type="text" name="nome" required><br><br>
-        Email: <input type="email" name="email" required><br><br>
-        Senha: <input type="password" name="senha" required><br><br>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required><br><br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" required><br><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" required><br><br>
         <input type="submit" value=" Cadastrar">
-
     </form>
   
     
