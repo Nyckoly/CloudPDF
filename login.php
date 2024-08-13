@@ -29,19 +29,23 @@ if($_SERVER['REQUEST_METHOD']=='POST'){//verifica se o método de requisição �
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Login</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="imagens/login.jpg" alt=" Imagem de login">
+    <div class="formulario">
+        <h2>Login</h2>
         <form method="post">
-            Email: <input type="email" name="email" required><br><br>
-            Senha: <input type="password" name ="senha" required><br><br>
-            <input type="submit" value="Entrar">
+            <input type="email" name="email" placeholder="E-mail" required><br><br>
+            <input type="password" name ="senha" placeholder="Senha" required><br><br>
+            <div class="botoes">
+                <a href="cadastro.php" class="cadastro-link">Fazer cadastro</a>
+                <input type="submit" value="Entrar">
+            </div>
         </form>
-        <a href="cadastro.php" class="cadastro-link">Fazer cadastro</a>
     </div>
-    
 </body>
 </html>

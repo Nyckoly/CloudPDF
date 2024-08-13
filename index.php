@@ -24,10 +24,14 @@ if ($_SESSION['loggedin'] == true) {
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-         <title>Painel</title>
+         <title>CloudPDF</title>
         </head>
         <body>
-            
+            <header>
+                <nav>
+                    <h1>CloudPDF </h1>
+                </nav>
+            </header>
             <form action="" method="POST">
                 <input name="pdf" type="file">
                 <button type="submit">Enviar</button>

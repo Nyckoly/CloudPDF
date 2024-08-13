@@ -30,17 +30,17 @@ if($_SERVER['REQUEST_METHOD']=='POST'){//VERIFICA SE O METODO ENVIADO É POST
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   
-    <form method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" required><br><br>
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" required><br><br>
-        <label for="senha">Senha:</label>
-        <input type="password" name="senha" required><br><br>
-        <input type="submit" value=" Cadastrar">
-    </form>
-  
-    
+    <div class="formulario">
+        <h2>Cadastro</h2>
+        <form method="post">
+            <input type="text" name="nome" placeholder="Nome" required><br><br>
+            <input type="email" name="email" placeholder="E-mail" required><br><br>
+            <input type="password" name="senha" placeholder="Senha" required><br><br>
+            <div class="botoes">
+                <a href="login.php" class="cadastro-link">Fazer login</a>
+                <input type="submit" value=" Cadastrar">
+            </div>
+        </form> 
+    </div>
 </body>
 </html>
